@@ -11,6 +11,14 @@ def inputInt(a, b):
     return int(a)
 
 
-rep = 22
-rep = inputInt(rep, "2")
-print(rep, type(rep))
+def inputFloat(a, b):
+    p = True
+    while p:
+        print(b)
+        a = input()
+        try:
+            float(a)
+            p = False
+        except:
+            print("choisir un nombre")
+    return float(a)
