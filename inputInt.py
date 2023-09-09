@@ -11,12 +11,16 @@ def input_int(question, nombre_de_lignes=2):
                 a = input()
                 b = False
             else:
-                print("Le deusieme parametre est invalide")
+                print("Le deuxième parametre est invalide")
+                b = False
+                input()
+                exit()
         try:
             int(a)
             p = False
         except:
             print("Choisir un nombre entier")
+            b = True
     return int(a)
 
 
@@ -33,10 +37,14 @@ def input_float(question, nombre_de_lignes=2):
                 a = input()
                 b = False
             else:
-                print("Le deusieme parametre est invalide")
+                print("Le deuxième parametre est invalide")
+                b = False
+                input()
+                exit()
         try:
             float(a)
             p = False
         except:
-            print("Choisir un nombre entier")
+            print("Choisir un nombre")
+            b = True
     return float(a)
