@@ -3,12 +3,10 @@ def input_int(question, nombre_de_lignes=2):
     while p:
         while b:
             if nombre_de_lignes == 1:
-                a = input(question)
-                b = False
+                a,b = input(question),False
             elif nombre_de_lignes == 2:
                 print(question)
-                a = input()
-                b = False
+                a,b = input(),False
             else:
                 print("Le deuxième parametre est invalide")
                 b = False
@@ -27,12 +25,10 @@ def input_float(question, nombre_de_lignes=2):
     while p:
         while b:
             if nombre_de_lignes == 1:
-                a = input(question)
-                b = False
+                a,b = input(question),False
             elif nombre_de_lignes == 2:
                 print(question)
-                a = input()
-                b = False
+                a,b = input(),False
             else:
                 print("Le deuxième parametre est invalide")
                 b = False
