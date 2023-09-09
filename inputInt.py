@@ -1,6 +1,5 @@
 def input_int(question, nombre_de_lignes=2):
-    p = True
-    b = True
+    p,b = True,True
     while p:
         while b:
             if nombre_de_lignes == 1:
@@ -16,17 +15,15 @@ def input_int(question, nombre_de_lignes=2):
                 input()
                 exit()
         try:
-            int(a)
+            return int(a)
             p = False
         except:
             print("Choisir un nombre entier")
             b = True
-    return int(a)
 
 
 def input_float(question, nombre_de_lignes=2):
-    p = True
-    b = True
+    p,b = True,True
     while p:
         while b:
             if nombre_de_lignes == 1:
@@ -42,9 +39,8 @@ def input_float(question, nombre_de_lignes=2):
                 input()
                 exit()
         try:
-            float(a)
+            return float(a)
             p = False
         except:
             print("Choisir un nombre")
             b = True
-    return float(a)
